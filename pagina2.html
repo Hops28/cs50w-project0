@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!--Iconos-->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+
+    <!--Estilo-->
+    <link rel="stylesheet" href="./CSS/Styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Slider-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <title>Redes y seguridad informática</title>
+</head>
+<body>
+    <img src="./static/img/HostCutted2.png" class="img-fluid" alt="Responsive image">
+    
+    <header>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="#">Redes</a>
+            <a href="pagina3.html">Hacking</a>
+            <a href="#">Contactame</a>
+        </nav>
+    </header>
+    
+    <div class="wrapper fondo cuerpo">
+        <div class="espacios_lados serif ubicacion2">
+            <ol id="indice">
+                <li><a href="#ip">¿Qué es una IP?</a></li>
+                <li><a href="#">Router, DHCP, ISP</a></li>
+                <li><a href="#">Topologías y tipos de comunicación en la red</a></li>
+                <li><a href="#">Capas del modelo OSI y TCP-IP</a></li>
+                <li><a href="#">Algunos protocolos que pertenecen a estas capa</a></li>
+            </ol>
+        </div>
+
+        <div class="wrapper">
+            <h2 class="ubicacion" id="ip">¿Qué es una IP?</h2>
+        
+            <p class="espacios_lados">
+                Es lo que permite individualizar un dispositivo dentro de la red, sería como un número de documento,
+                pasaporte, etc.... ya que es un número único e irrepetible que identifica a la persona o dispositivo. Es
+                un número que identifica de forma única la interfaz en red de cualquier dispositivo conectado a ella,
+                corresponde al nivel de red del modelo TCP-IP.
+            </p>
+        
+            <div class="wrapper subtema">
+                <h3>- ¿Qué diferencia hay entre dirección IP pública y privada?</h3>
+        
+                <table class="table table-bordered table-light table-striped">
+                    <thead>
+                        <tr class="fondo_columna">
+                            <th scope="col">IP pública</th>
+                            <th scope="col">IP privada</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th class="fondo_filas">
+                                La dirección IP pública es un número único que identifica nuestra red desde el exterior.
+                            </th>
+                            <th class="fondo_filas">
+                                La dirección IP privada es un número único que identifica a un dispositivo conectado en
+                                nuestra
+                                red interna
+                            </th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        
+            <div class="wrapper subtema">
+                <h3>- Ejemplo con la IP</h3>
+        
+                <p>
+                    Al colocar en el cmd: 'ipconfig' y buscamos donde dice 'Adaptador de LAN inalámbrica wi-fi' la dirección IP
+                    es la que dice 'Dirección IPv4', un ejemplo podría ser:
+                </p>
+        
+                <p>
+                    <b>
+                        - 192.168.x.x
+                    </b>
+                    <i>
+                        (Donde están las 'x' el valor puede variar)
+                    </i>
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
