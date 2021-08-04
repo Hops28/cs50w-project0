@@ -127,9 +127,3 @@ header nav a {
   text-decoration: none;
   border-radius: 10px;
 }
-
-header nav a:hover {
-  background: rgba(150, 255, 150, 0.2);
-  color: rgb(200, 255, 200);
-  text-decoration: none;
-}

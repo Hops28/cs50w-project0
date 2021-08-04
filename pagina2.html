@@ -12,6 +12,7 @@
 
     <!--Estilo-->
     <link rel="stylesheet" href="./CSS/Styles.css">
+    <link rel="stylesheet" href="./CSS/Sass.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -54,6 +55,7 @@
                 pasaporte, etc.... ya que es un número único e irrepetible que identifica a la persona o dispositivo. Es
                 un número que identifica de forma única la interfaz en red de cualquier dispositivo conectado a ella,
                 corresponde al nivel de red del modelo TCP-IP.
+                La IP se traduce por "Internet Protocol", "Protocolo de internet" en español, y se trata de un protocolo utilizado para la comunicación de datos a través de una red de paquetes combinados.
             </p>
         
             <div class="wrapper subtema">
@@ -79,7 +81,14 @@
                         </tr>
                     </tbody>
                 </table>
+
+                
             </div>
+
+            <p class="espacios_lados">
+                La dirección IP privada cambia dependiendo del dispositivo, mientras que la dirección IP pública no cambia, y será
+                la misma con cada dispositivo, porque todos los dispositivos valen de un mismo router (192.168.0.1).
+            </p>
         
             <div class="wrapper subtema">
                 <h3>- Ejemplo con la IP</h3>
@@ -96,6 +105,32 @@
                     <i>
                         (Donde están las 'x' el valor puede variar)
                     </i>
+                </p>
+
+                <p>
+                    Donde la puerta de enlace predeterminada es:
+                </p>
+
+                <p>
+                    <b>
+                        - 192.168.x.y
+                    </b>
+                </p>
+
+                <p>
+                    El cambio en el último formato es por la máscara de subred:
+                </p>
+
+                <p>
+                    <b>
+                        - 255.255.255.0
+                    </b>
+                </p>
+
+                <p>
+                    Esto significa que donde tenga un <b>'0'</b> en la máscara de subred, significa que ahí es donde sucede el cambio.
+                    Por eso el valor que cambia es <i>'x'</i> al final de la IP.
+                    Si quisiera acceder a mi red wifi, entonces debería acceder a mi puerta de enlace predeterminada.
                 </p>
             </div>
         </div>

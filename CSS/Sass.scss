@@ -1,0 +1,22 @@
+$justificado: justify;
+
+/*Variables*/
+%justificado {
+  text-align: $justificado;
+}
+
+/*Herencia*/
+.alineacion {
+  @extend %justificado;
+}
+
+/*Anidamiento*/
+header {
+  nav {
+    a:hover {
+      background: rgba(150, 255, 150, 0.2);
+      color: rgb(200, 255, 200);
+      text-decoration: none;
+    }
+  }
+}

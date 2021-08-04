@@ -1,0 +1,13 @@
+/*Variables*/
+.alineacion {
+  text-align: justify;
+}
+
+/*Herencia*/
+/*Anidamiento*/
+header nav a:hover {
+  background: rgba(150, 255, 150, 0.2);
+  color: #c8ffc8;
+  text-decoration: none;
+}
+/*# sourceMappingURL=Sass.css.map */
