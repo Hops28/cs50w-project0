@@ -28,17 +28,44 @@
     <img src="./static/img/HostCutted2.png" class="img-fluid" alt="Responsive image">
     
     <header>
-        <nav>
+        <!--
+            <nav>
             <a href="index.html">Inicio</a>
             <a href="#">Redes</a>
             <a href="pagina3.html">Hacking</a>
             <a href="#">Contactame</a>
+            </nav>
+        -->
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <h3><i>Redes y seguridad informática</i></h3>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="pagina2.html">Redes</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="pagina3.html">Hacking</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Contactame</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
     
-    <div class="wrapper fondo cuerpo">
+    <div class="wrapper fondo cuerpo alineacion">
         <div class="espacios_lados serif ubicacion2">
-            <ol id="indice">
+            <ol class="indice">
                 <li><a href="#ip">¿Qué es una IP?</a></li>
                 <li><a href="#">Router, DHCP, ISP</a></li>
                 <li><a href="#">Topologías y tipos de comunicación en la red</a></li>
@@ -59,7 +86,7 @@
             </p>
         
             <div class="wrapper subtema">
-                <h3>- ¿Qué diferencia hay entre dirección IP pública y privada?</h3>
+                <h2>- ¿Qué diferencia hay entre dirección IP pública y privada?</h2>
         
                 <table class="table table-bordered table-light table-striped">
                     <thead>
@@ -91,7 +118,7 @@
             </p>
         
             <div class="wrapper subtema">
-                <h3>- Ejemplo con la IP</h3>
+                <h2>- Ejemplo con la IP</h2>
         
                 <p>
                     Al colocar en el cmd: 'ipconfig' y buscamos donde dice 'Adaptador de LAN inalámbrica wi-fi' la dirección IP
