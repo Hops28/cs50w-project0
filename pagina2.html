@@ -47,10 +47,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Inicio</a>
+                        <a class="nav-link" href="index.html">Inicio</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="pagina2.html">Redes</a>
+                        <a class="nav-link" href="#">Redes</a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="pagina3.html">Hacking</a>
@@ -67,10 +67,17 @@
         <div class="espacios_lados serif ubicacion2">
             <ol class="indice">
                 <li><a href="#ip">¿Qué es una IP?</a></li>
-                <li><a href="#">Router, DHCP, ISP</a></li>
-                <li><a href="#">Topologías y tipos de comunicación en la red</a></li>
-                <li><a href="#">Capas del modelo OSI y TCP-IP</a></li>
-                <li><a href="#">Algunos protocolos que pertenecen a estas capa</a></li>
+                <li><a href="#DNSISPDHCP">DNS, DHCP, ISP</a></li>
+                <li><a href="#OSI">Capas del modelo OSI y TCP-IP</a></li>
+                <ol class="indice">
+                    <li><a href="#C1">Física</a></li>
+                    <li><a href="#C2">Enlace de datos</a></li>
+                    <li><a href="#C3">Red</a></li>
+                    <li><a href="#C4">Transporte</a></li>
+                    <li><a href="#C5">Sesión</a></li>
+                    <li><a href="#C6">Presentación</a></li>
+                    <li><a href="#C7">Aplicación</a></li>
+                </ol>
             </ol>
         </div>
 
@@ -159,6 +166,206 @@
                     Por eso el valor que cambia es <i>'x'</i> al final de la IP.
                     Si quisiera acceder a mi red wifi, entonces debería acceder a mi puerta de enlace predeterminada.
                 </p>
+
+                <p>
+                    La dirección IP cambia dependiendo del dispositivo, mientras que la dirección IP pública no cambia,porque todos los dispositivossalen de un mismo router <i>(192.168.0.1)</i>
+                </p>
+            </div>
+        </div>
+
+        <div class="wrapper espacios_lados ubicacion">
+            <h2 id="DNSISPDHCP">¿Qué es DNS?</h2>
+
+            <p>
+                Es el nombre que hace referencia a la IP de una página web.
+                <br><br>
+                Para ver la dirección IP de una página web se escribe lo siguiente en el 'cmd'
+                <br>
+                - ping <i>(Dominio)</i>
+            </p>
+
+            <h2 class="ubicacion">¿Qué es DHCP?</h2>
+
+            <p>
+                Es el que se encarga de designar las IPs a los dispositivos que se vayan a conectar a una red.
+            </p>
+
+            <h2 class="ubicacion">¿Qué es ISP?</h2>
+
+            <p>
+                Es nuestro proveedor de internet o la compañía que contratamos para tener internet.
+            </p>
+        </div>
+
+        <div class="wrapper">
+            <div class="espacios_lados">
+                <h1 class="ubicacion" id="OSI">Modelo OSI</h1>
+                
+                <p>
+                    El modelo de interconexión de sistemas abiertos (OSI, por sus siglas en inglés) es un modelo conceptual, creado por
+                    la
+                    Organización internacional de normalización, que permite que diversos sistemas de comunicación se comuniquen usando
+                    protocolos estándar. En resumen, el modelo OSI proporciona a los diferentes sistemas informáticos un estándar para
+                    comunicarse entre sí.
+                </p>
+            </div>
+            
+            <div class="wrapper subtema" id="C1">
+                <h2><u>Física</u></h2>
+                <h3><i>Serialización y transmisión binaria</i></h3>
+
+                <p>
+                    Las comunicaciones se realizan a través de señales eléctricas, y hablando a nivel electrónico, podría entenderse como conectar por cable y del efecto que tiene se podría conectar de manera inalámbrica, como los router también existe la <i>radio frecuencia</i>, las conexiones por <i>fibra óptica</i>, etc.
+                    <br>
+                </p>
+                <p>
+                    Cuando se habla de transmisiones eléctricas estamos hablando de conexiones. <i>Ethernet</i>
+                    <br>
+                </p>
+                <p>
+                    Se encargan de traducir las señales eléctricas a unas señales que puedan ser transmitidas por el medio de comunicación seleccionado <i>(Radiofrecuencia, fibra óptica, etc...)</i>. Es la encargada de gestionar todos los medios y sistemas físicos necesarios para el envío y recepción de información, permitir la conexion física a una red.
+                </p>
+            </div>
+
+            <div class="wrapper subtema" id="C2">
+                <h2><u>Enlace de datos</u></h2>
+                <h3><i>Direccionamiento físico</i></h3>
+
+                <p>
+                    Es aquel que lleva adelante la tarea, y es el encargado de mantener un control de la comunicación y de finalizarla entre los dos enlaces.
+                </p>
+                <p>
+                    También controla el volumen de la información para evitar colapsos en el medio de comunicación.
+                </p>
+                <p>
+                    Controla los errores y la gestión de la información que circula en el enlace de datos y evita el flujo que sature al otro equipo.
+                </p>
+                <p>
+                    Tendría que tener mucha relación con los puertos, que son los medios a través de los cuales se genera el enlace de datos, un enlace de comunicación. Por eso es importante que los puertos que no utilicemos a modo de seguridad los bloqueemos directamente.
+                </p>
+            </div>
+
+            <div class="wrapper subtema" id="C3">
+                <h2><u>Red</u></h2>
+                <h3><i>Determinación de ruta y direccionamiento lógico</i></h3>
+
+                <p>
+                    Esta capa se encarga de la terminación de ruta, y el direccionamiento lógico de la IP. La capa 3 (Red) utiliza la capa 2 (Enlace de datos) para conectarse a dispositivos que no lo estén de forma directa.
+                </p>
+                <p>
+                    El enrutamiento de tráfico por la red donde busca el camino más eficiente para buscar el camino de destino-control de gestión de red, donde en la capa 3 (Red) detecta los puntos de congestión para evitar colapsos de la red.
+                </p>
+                <p><b>
+                   Algunos protocolos de la capa 3: 
+                </b></p>
+                <ul>
+                    <li>IP</li>
+                    <li>ISM</li>
+                    <li>IPX</li>
+                    <li>IGMP</li>
+                </ul>
+                <p>
+                    Existen vulnerabilidades de protocolos como ser el RIP u OSPF ya que através de los mismos se pueden inyectar routers falsos.
+                </p>
+            </div>
+
+            <div class="wrapper subtema" id="C4">
+                <h2><u>Transporte</u></h2>
+                <h3><i>conexión de extremo a extremo y confiabilidad</i></h3>
+
+                <p>
+                    Su función y objetivo es ofrecer un sistema para enviar información <i>sin errores</i> a las capas superiores.
+                </p>
+
+                <ul>
+                    <li>Entrega la información de forma fidedigna (Creíble)</li>
+                    <li>Brinda la información en el orden correcto</li>
+                    <li>Gestiona de forma eficiente el flujo de comunicación</li>
+                </ul>
+
+                <p>
+                    La información que entrega es a través de los puertos sin mezclar los niveles superiores.
+                </p>
+                <p>
+                    Toma los datos provenientes de la aplicación y los fracciona en segmentos que luego son enviados a la capa de red.
+                </p>
+            </div>
+
+            <div class="wrapper subtema" id="C5">
+                <h2>Sesión</h2>
+                <h3><i>Comunicación entre dispositivos de red</i></h3>
+            
+                <p>
+                    Facilita los mecanismos de gestión entre la comunicación de capas superiores.
+                </p>
+
+                <p><b>
+                    Servicios:
+                </b></p>
+                <ul>
+                    <li>Control de diálogo</li>
+                    <li>Agrupamiento</li>
+                    <li>Recuperación</li>
+                </ul>
+
+                <p>
+                    La seguridad es lo que caracteriza a la capa de sesión, ya que dentro de sus capacidades es la de gestionar la autenticación y autorización del envío a recepción de información  a través de métodos criptográficos.
+                </p>
+            </div>
+
+            <div class="wrapper subtema" id="C6">
+                <h2><u>Presentación</u></h2>
+                <h3><i>Representación de datos y encriptación</i></h3>
+            
+                <p>
+                    Es la que se encarga de hacer que los datos enviados se puedan entender através de la comunicación.
+                </p>
+                <p>
+                    Dado que cuando se establece una comunicación, cada autor responsable puede tener sin ir más lejos, sistemas operativos distintos, es cuando entra en juego el protagonismo de esta capa, la de presentación la cual efectivamente se encarga de hacer una correcta interpretación de la información enviada.
+                </p>
+
+                <p><b>
+                        Servicios:
+                    </b></p>
+                <ul>
+                    <li>La conversación de datos a formatos normalizados, sin importar el SO</li>
+                    <li>Comprime los datos para que ocupen el menor nómero de bits</li>
+                    <li>Cifra los datos</li>
+                </ul>
+
+                <p><b>
+                        Algunos protocolos:
+                    </b></p>
+                <ul>
+                    <li>NCP</li>
+                    <li>XDR</li>
+                    <li>AFP</li>
+                </ul>
+            </div>
+
+            <div class="wrapper subtema" id="C7">
+                <h2><u>Aplicación</u></h2>
+                <h3><i>Servicios de red a aplicaciones</i></h3>
+            
+                <p>
+                    Es importante no confundir el nombre de esta capa con aplicaciones que podamos tener instaladas en nuestras PC.
+                    <br>
+                    Esta capa se centra netamente en las comunicaciones.
+                </p>
+
+                <p>
+                    Es la responsable de gestionar la información de las aplicaciones del cliente.
+                </p>
+
+                <p><b>
+                        Algunos protocolos:
+                    </b></p>
+                <ul>
+                    <li>Correo: SMTP, POP, IMAP</li>
+                    <li>Navegación: HTTP, HTTPS</li>
+                    <li>Transferencias de archivos: FTP, TFTP, SFTP</li>
+                    <li>Conexión remota: SSH, Telnet</li>
+                </ul>
             </div>
         </div>
     </div>

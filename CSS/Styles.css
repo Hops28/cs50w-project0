@@ -52,12 +52,6 @@ table tr th {
   }
 }
 
-@media (max-width: 332px) {
-}
-
-@media (max-width: 304px) {
-}
-
 /*https://i.imgur.com/F8XC5OY.png*/
 /*https://i.imgur.com/npqmN2o.jpg*/
 
@@ -85,6 +79,10 @@ table tr th {
   height: auto;
   margin-bottom: 4%;
   justify-content: center;
+}
+
+p {
+  text-indent: 20px;
 }
 
 img.animated-gif {
@@ -134,13 +132,19 @@ header {
 }
 
 .navbar-expand-lg .navbar-collapse {
-  position: relative;
-  left: 7.5%;
+  width: 100%;
+  padding-left: 12%;
+}
+
+@media (max-width: 991px) {
+  .navbar-expand-lg .navbar-collapse {
+    width: 100%;
+    padding-left: 0%;
+  }
 }
 
 header nav {
   width: 100%;
-  justify-content: center;
   background: linear-gradient(rgb(0, 0, 5), rgb(18, 29, 6));
 }
 
