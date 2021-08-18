@@ -67,6 +67,11 @@ table tr th {
   height: 100%;
 }
 
+body ::selection {
+  background-color: rgba(0, 50, 0, 50);
+  color: turquoise;
+}
+
 .indice a {
   color: rgb(170, 255, 170);
 }
@@ -85,6 +90,10 @@ p {
   text-indent: 20px;
 }
 
+ul > li {
+  color: rgb(200, 255, 200);
+}
+
 img.animated-gif {
   width: 40%;
   height: auto;
@@ -98,6 +107,34 @@ img.animated-gif {
 
 .ubicacion2 {
   margin-top: 25px;
+}
+
+textarea {
+  resize: none;
+}
+
+#Descripcion {
+  width: 50%;
+  background-color: rgb(170, 255, 170);
+  border-radius: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.inputs {
+  width: 50%;
+  background-color: rgb(170, 255, 170);
+  border-radius: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.espacios_lados2 {
+  margin-top: 30px;
+  justify-content: center;
+  margin-left: 25%;
+  margin-right: 25%;
+  width: 50%;
 }
 
 .espacios_lados {
