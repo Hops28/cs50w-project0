@@ -68,12 +68,24 @@ table tr th {
 }
 
 body ::selection {
-  background-color: rgba(0, 50, 0, 50);
+  background-color: rgba(0, 50, 0, 30);
   color: turquoise;
 }
 
 .indice a {
   color: rgb(170, 255, 170);
+}
+
+.enlace {
+  color: aliceblue;
+}
+
+.enlace:hover {
+  color: rgb(200, 255, 200);
+}
+
+#ISej1 {
+  font-size: large;
 }
 
 #sizeSlider {
